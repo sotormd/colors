@@ -1,3 +1,3 @@
-# Colorscheme flake
+# Colorscheme Flake
 
 Current theme: [Nord](https://nordtheme.com)
