@@ -22,4 +22,33 @@
   yellow = "ebcb8b";
   green = "a3be8c";
   purple = "b48ead";
+
+  # gtk
+  gtk = {
+    theme = {
+      package = "nordic";
+      name = "Nordic-darker";
+    };
+    icons = {
+      package = "nordzy-icon-theme";
+      name = "Nordzy-dark";
+    };
+    cursor = {
+      package = "simp1e-cursors";
+      name = "Simp1e-Nord-Dark";
+    };
+  };
+
+  # fonts
+  fonts = {
+    packages = [
+      "ibm-plex"
+      "noto-fonts-color-emoji"
+    ];
+    nerdfonts = [ "im-writing" ];
+    monospace = "IBM Plex Mono";
+    normal = "IBM Plex Sans";
+    sansserif = "IBM Plex Sans";
+    serif = "IBM Plex Serif";
+  };
 }
