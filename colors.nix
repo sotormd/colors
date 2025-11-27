@@ -1,4 +1,4 @@
-{
+rec {
   # polar night
   bg0 = "2e3440";
   bg1 = "3b4252";
@@ -50,5 +50,19 @@
     normal = "IBM Plex Sans";
     sansserif = "IBM Plex Sans";
     serif = "IBM Plex Serif";
+  };
+
+  homepage = {
+    bg = bg0;
+    btnbg = bg3;
+    fg = fg0;
+    accent = blue2;
+    hover = [
+      red
+      orange
+      yellow
+      green
+      purple
+    ];
   };
 }
