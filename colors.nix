@@ -23,6 +23,12 @@ rec {
   green = "a3be8c";
   purple = "b48ead";
 
+  # nvf (sotormd/neovim)
+  neovim = {
+    name = "nord";
+    style = "dark";
+  };
+
   # gtk
   gtk = {
     theme = {
@@ -52,6 +58,7 @@ rec {
     serif = "IBM Plex Serif";
   };
 
+  # homepage (sotormd/homepage)
   homepage = {
     bg = bg0;
     btnbg = bg3;
@@ -66,6 +73,7 @@ rec {
     ];
   };
 
+  # waybar (sotormd/nixos)
   waybar = {
     mode.text = blue2;
     workspaces = {
@@ -91,6 +99,7 @@ rec {
     clock.bg = purple;
   };
 
+  # foot (sotormd/nixos)
   foot = {
     bg = bg0;
     fg = fg0;
@@ -116,6 +125,7 @@ rec {
     bright7 = fg2;
   };
 
+  # rofi (sotormd/nixos)
   rofi = {
     border = blue2;
     handle = blue2;
@@ -152,12 +162,14 @@ rec {
     };
   };
 
+  # dunst (sotormd/dunst)
   dunst = {
     bg = bg0;
     normal = blue2;
     urgent = yellow;
   };
 
+  # eww (sotormd/eww)
   eww = {
     inherit
       bg0
