@@ -65,4 +65,29 @@ rec {
       purple
     ];
   };
+
+  waybar = {
+    mode.text = blue2;
+    workspaces = {
+      border = blue2;
+      text = blue2;
+      hover = bg3;
+    };
+    animation = {
+      a = blue0;
+      b = blue1;
+      c = blue2;
+      d = blue3;
+      e = blue0;
+      f = blue1;
+      g = blue2;
+      h = blue3;
+    };
+    modules.text = bg1;
+    util.bg = red;
+    network.bg = orange;
+    audio.bg = yellow;
+    battery.bg = green;
+    clock.bg = purple;
+  };
 }
