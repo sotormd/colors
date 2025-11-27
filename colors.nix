@@ -90,4 +90,108 @@ rec {
     battery.bg = green;
     clock.bg = purple;
   };
+
+  foot = {
+    bg = bg0;
+    fg = fg0;
+    cursor = {
+      bg = bg0;
+      fg = fg0;
+    };
+    regular0 = bg1;
+    regular1 = red;
+    regular2 = green;
+    regular3 = yellow;
+    regular4 = blue2;
+    regular5 = purple;
+    regular6 = blue1;
+    regular7 = fg1;
+    bright0 = bg3;
+    bright1 = red;
+    bright2 = green;
+    bright3 = yellow;
+    bright4 = blue2;
+    bright5 = purple;
+    bright6 = blue0;
+    bright7 = fg2;
+  };
+
+  rofi = {
+    border = blue2;
+    handle = blue2;
+    bgs = {
+      normal = bg3;
+      urgent = yellow;
+      active = green;
+    };
+    fgs = {
+      normal = fg0;
+      urgent = bg3;
+      active = bg3;
+    };
+    selectedBgs = {
+      normal = blue2;
+      urgent = green;
+      active = yellow;
+    };
+    selectedFgs = {
+      normal = bg3;
+      urgent = bg3;
+      active = bg3;
+    };
+    alternateBgs = {
+      normal = bg3;
+      urgent = yellow;
+      active = green;
+    };
+    alternateFgs = {
+      normal = bg3;
+      urgent = bg3;
+      active = bg3;
+    };
+  };
+
+  dunst = {
+    bg = bg0;
+    normal = blue2;
+    urgent = yellow;
+  };
+
+  eww = {
+    inherit
+      bg0
+      bg1
+      bg2
+      bg3
+      ;
+    dock = {
+      active = blue2;
+      unfocused = bg3;
+    };
+    start = {
+      uptime = purple;
+      host = blue2;
+      leave = red;
+      system = {
+        text = blue2;
+        cpu = orange;
+        ram = yellow;
+        zfs = green;
+      };
+      fortune = blue2;
+      music = {
+        title = blue0;
+        artist = blue2;
+        skip = yellow;
+        play = green;
+        slider = purple;
+        lyrics = blue0;
+      };
+    };
+    calendar = {
+      accent = purple;
+      focused = bg1;
+      unfocused = fg0;
+    };
+  };
 }
