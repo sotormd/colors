@@ -121,6 +121,7 @@ rec {
     handle = blue2;
     bgs = {
       normal = bg3;
+      alternate = bg2;
       urgent = yellow;
       active = green;
     };
