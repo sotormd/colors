@@ -146,7 +146,7 @@ rec {
       active = green;
     };
     alternateFgs = {
-      normal = bg3;
+      normal = fg0;
       urgent = bg3;
       active = bg3;
     };
