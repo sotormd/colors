@@ -207,4 +207,114 @@ rec {
       unfocused = fg0;
     };
   };
+
+  swaylock = {
+    clear = yellow;
+    verifying = blue2;
+    wrong = red;
+  };
+
+  sway = {
+    focused = {
+      border = blue2;
+      background = bg0;
+      text = fg0;
+      indicator = blue2;
+      childBorder = blue2;
+    };
+
+    focusedInactive = {
+      border = bg3;
+      background = bg0;
+      text = fg0;
+      indicator = bg3;
+      childBorder = bg3;
+    };
+
+    unfocused = {
+      border = bg3;
+      background = bg0;
+      text = fg0;
+      indicator = bg3;
+      childBorder = bg3;
+    };
+
+    urgent = {
+      border = yellow;
+      background = bg0;
+      text = fg0;
+      indicator = yellow;
+      childBorder = yellow;
+    };
+
+    background = bg0;
+  };
+
+  zathura = {
+    notification = {
+      error = {
+        bg = bg0;
+        fg = red;
+      };
+      warning = {
+        bg = bg0;
+        fg = orange;
+      };
+      normal = {
+        bg = bg0;
+        fg = fg0;
+      };
+    };
+
+    completion = {
+      bg = bg0;
+      fg = fg0;
+      group = {
+        bg = bg1;
+        fg = fg0;
+      };
+      highlight = {
+        bg = blue1;
+        fg = bg1;
+      };
+    };
+
+    index = {
+      bg = bg0;
+      fg = blue0;
+      active = {
+        bg = blue0;
+        fg = bg0;
+      };
+    };
+
+    inputbar = {
+      bg = bg0;
+      fg = fg1;
+    };
+
+    statusbar = {
+      bg = bg0;
+      fg = fg1;
+    };
+
+    default = {
+      bg = bg0;
+      fg = fg0;
+    };
+
+    renderLoading = {
+      bg = bg0;
+      fg = bg2;
+    };
+
+    recolor = {
+      light = bg0;
+      dark = fg2;
+    };
+
+    highlight = "rgba(129, 161, 193, 0.5)";
+  };
+
+  btop = "nord";
 }
