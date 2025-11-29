@@ -208,12 +208,14 @@ rec {
     };
   };
 
+  # swaylock (sotormd/nixos)
   swaylock = {
     clear = yellow;
     verifying = blue2;
     wrong = red;
   };
 
+  # sway (sotormd/nixos)
   sway = {
     focused = {
       border = blue2;
@@ -250,6 +252,7 @@ rec {
     background = bg0;
   };
 
+  # zathura (sotormd/nixos)
   zathura = {
     notification = {
       error = {
@@ -316,5 +319,6 @@ rec {
     highlight = "rgba(129, 161, 193, 0.5)";
   };
 
+  # btop (sotormd/nixos)
   btop = "nord";
 }
