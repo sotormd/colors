@@ -1,47 +1,54 @@
 rec {
-  # polar night
-  bg0 = "2e3440";
-  bg1 = "3b4252";
-  bg2 = "434c5e";
-  bg3 = "4c566a";
+  bg0_h = "1d2021";
+  bg0 = "282828";
+  bg0_s = "32302f";
+  bg1 = "3c3836";
+  bg2 = "504945";
+  bg3 = "665c54";
+  bg4 = "7c6f64";
 
-  # snow storm
-  fg0 = "d8dee9";
-  fg1 = "e5e9f0";
-  fg2 = "eceff4";
+  fg0 = "fbf1c7";
+  fg1 = "ebdbb2";
+  fg2 = "d5c4a1";
+  fg3 = "bdae93";
+  fg4 = "a89984";
 
-  # frost
-  blue0 = "8fbcbb";
-  blue1 = "88c0d0";
-  blue2 = "81a1c1";
-  blue3 = "5e81ac";
+  red = "cc241d";
+  green = "98971a";
+  yellow = "d79921";
+  blue = "458588";
+  purple = "b16286";
+  aqua = "689d6a";
+  orange = "d65d0e";
+  gray = "928374";
 
-  # aurora
-  red = "bf616a";
-  orange = "d08770";
-  yellow = "ebcb8b";
-  green = "a3be8c";
-  purple = "b48ead";
+  red_b = "fb4934";
+  green_b = "b8bb26";
+  yellow_b = "fabd2f";
+  blue_b = "83a598";
+  purple_b = "d3869b";
+  aqua_b = "8ec07c";
+  orange_b = "fe8019";
 
   # nvf (sotormd/neovim)
   neovim = {
-    name = "nord";
+    name = "gruvbox";
     style = "dark";
   };
 
   # gtk
   gtk = {
     theme = {
-      package = "nordic";
-      name = "Nordic-darker";
+      package = "gruvbox-gtk-theme";
+      name = "Gruvbox-Dark";
     };
     icons = {
-      package = "nordzy-icon-theme";
-      name = "Nordzy-dark";
+      package = "gruvbox-plus-icons";
+      name = "Gruvbox-Plus-Dark";
     };
     cursor = {
-      package = "simp1e-cursors";
-      name = "Simp1e-Nord-Dark";
+      package = "whitesur-cursors";
+      name = "WhiteSur-cursors";
     };
   };
 
@@ -63,40 +70,47 @@ rec {
     bg = bg0;
     btnbg = bg3;
     fg = fg0;
-    accent = blue2;
+    accent = blue_b;
     hover = [
       red
       orange
       yellow
       green
       purple
+      aqua
+      red_b
+      orange_b
+      yellow_b
+      green_b
+      purple_b
+      aqua_b
     ];
   };
 
   # waybar (sotormd/nixos)
   waybar = {
-    mode.text = blue2;
+    mode.text = blue_b;
     workspaces = {
-      border = blue2;
-      text = blue2;
+      border = blue_b;
+      text = blue_b;
       hover = bg3;
     };
     animation = {
-      a = blue0;
-      b = blue1;
-      c = blue2;
-      d = blue3;
-      e = blue0;
-      f = blue1;
-      g = blue2;
-      h = blue3;
+      a = blue;
+      b = blue;
+      c = blue_b;
+      d = blue_b;
+      e = blue;
+      f = blue;
+      g = blue_b;
+      h = blue_b;
     };
     modules.text = bg1;
-    util.bg = red;
-    network.bg = orange;
-    audio.bg = yellow;
-    battery.bg = green;
-    clock.bg = purple;
+    util.bg = red_b;
+    network.bg = orange_b;
+    audio.bg = yellow_b;
+    battery.bg = green_b;
+    clock.bg = purple_b;
   };
 
   # foot (sotormd/nixos)
@@ -111,24 +125,24 @@ rec {
     regular1 = red;
     regular2 = green;
     regular3 = yellow;
-    regular4 = blue2;
+    regular4 = blue;
     regular5 = purple;
-    regular6 = blue1;
+    regular6 = aqua;
     regular7 = fg1;
     bright0 = bg3;
-    bright1 = red;
-    bright2 = green;
-    bright3 = yellow;
-    bright4 = blue2;
-    bright5 = purple;
-    bright6 = blue0;
+    bright1 = red_b;
+    bright2 = green_b;
+    bright3 = yellow_b;
+    bright4 = blue_b;
+    bright5 = purple_b;
+    bright6 = aqua_b;
     bright7 = fg2;
   };
 
   # rofi (sotormd/nixos)
   rofi = {
-    border = blue2;
-    handle = blue2;
+    border = blue_b;
+    handle = blue_b;
     bgs = {
       normal = bg3;
       alternate = bg2;
@@ -141,7 +155,7 @@ rec {
       active = bg3;
     };
     selectedBgs = {
-      normal = blue2;
+      normal = blue_b;
       urgent = green;
       active = yellow;
     };
@@ -165,8 +179,8 @@ rec {
   # dunst (sotormd/dunst)
   dunst = {
     bg = bg0;
-    normal = blue2;
-    urgent = yellow;
+    normal = blue_b;
+    urgent = yellow_b;
   };
 
   # eww (sotormd/eww)
@@ -178,31 +192,31 @@ rec {
       bg3
       ;
     dock = {
-      active = blue2;
+      active = blue_b;
       unfocused = bg3;
     };
     start = {
-      uptime = purple;
-      host = blue2;
+      uptime = purple_b;
+      host = blue_b;
       leave = red;
       system = {
-        text = blue2;
-        cpu = orange;
-        ram = yellow;
-        zfs = green;
+        text = blue_b;
+        cpu = orange_b;
+        ram = yellow_b;
+        zfs = green_b;
       };
-      fortune = blue2;
+      fortune = blue_b;
       music = {
-        title = blue0;
-        artist = blue2;
-        skip = yellow;
-        play = green;
-        slider = purple;
-        lyrics = blue0;
+        title = aqua_b;
+        artist = blue_b;
+        skip = yellow_b;
+        play = green_b;
+        slider = purple_b;
+        lyrics = aqua_b;
       };
     };
     calendar = {
-      accent = purple;
+      accent = purple_b;
       focused = bg1;
       unfocused = fg0;
     };
@@ -210,19 +224,19 @@ rec {
 
   # swaylock (sotormd/nixos)
   swaylock = {
-    clear = yellow;
-    verifying = blue2;
-    wrong = red;
+    clear = yellow_b;
+    verifying = blue_b;
+    wrong = red_b;
   };
 
   # sway (sotormd/nixos)
   sway = {
     focused = {
-      border = blue2;
+      border = blue_b;
       background = bg0;
       text = fg0;
-      indicator = blue2;
-      childBorder = blue2;
+      indicator = blue_b;
+      childBorder = blue_b;
     };
 
     focusedInactive = {
@@ -242,11 +256,11 @@ rec {
     };
 
     urgent = {
-      border = yellow;
+      border = yellow_b;
       background = bg0;
       text = fg0;
-      indicator = yellow;
-      childBorder = yellow;
+      indicator = yellow_b;
+      childBorder = yellow_b;
     };
 
     background = bg0;
@@ -257,11 +271,11 @@ rec {
     notification = {
       error = {
         bg = bg0;
-        fg = red;
+        fg = red_b;
       };
       warning = {
         bg = bg0;
-        fg = orange;
+        fg = orange_b;
       };
       normal = {
         bg = bg0;
@@ -277,16 +291,16 @@ rec {
         fg = fg0;
       };
       highlight = {
-        bg = blue1;
+        bg = blue_b;
         fg = bg1;
       };
     };
 
     index = {
       bg = bg0;
-      fg = blue0;
+      fg = blue_b;
       active = {
-        bg = blue0;
+        bg = blue_b;
         fg = bg0;
       };
     };
@@ -316,9 +330,9 @@ rec {
       dark = fg2;
     };
 
-    highlight = "rgba(129, 161, 193, 0.5)";
+    highlight = "rgba(131, 165, 152, 0.5)";
   };
 
   # btop (sotormd/nixos)
-  btop = "nord";
+  btop = "gruvbox_dark";
 }
