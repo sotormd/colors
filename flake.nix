@@ -2,7 +2,7 @@
   description = "colorscheme flake";
 
   outputs =
-    { self, ... }:
+    _:
     let
       colors = import ./colors.nix;
     in
