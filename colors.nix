@@ -49,10 +49,11 @@ rec {
   fonts = {
     packages = [
       "ibm-plex"
+      "jetbrains-mono"
       "noto-fonts-color-emoji"
     ];
     nerdfonts = [ "im-writing" ];
-    monospace = "IBM Plex Mono";
+    monospace = "JetBrains Mono";
     normal = "IBM Plex Sans";
     sansserif = "IBM Plex Sans";
     serif = "IBM Plex Serif";
