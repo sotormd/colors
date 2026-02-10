@@ -23,7 +23,32 @@ rec {
   green = "a3be8c";
   purple = "b48ead";
 
-  # nvf (sotormd/neovim)
+  # nix-on-droid
+  droid = {
+    bg = bg0;
+    fg = fg0;
+    cursor = fg0;
+
+    color0 = bg3;
+    color1 = red;
+    color2 = green;
+    color3 = yellow;
+    color4 = blue3;
+    color5 = purple;
+    color6 = blue1;
+    color7 = fg1;
+
+    color8 = bg2;
+    color9 = red;
+    color10 = green;
+    color11 = yellow;
+    color12 = blue2;
+    color13 = purple;
+    color14 = blue0;
+    color15 = fg2;
+  };
+
+  # nvf
   neovim = {
     name = "nord";
     style = "dark";
@@ -59,7 +84,7 @@ rec {
     serif = "IBM Plex Serif";
   };
 
-  # homepage (sotormd/homepage)
+  # homepage
   homepage = {
     bg = bg0;
     btnbg = bg3;
@@ -74,7 +99,7 @@ rec {
     ];
   };
 
-  # waybar (sotormd/nixos)
+  # waybar
   waybar = {
     mode.text = blue2;
     workspaces = {
@@ -100,7 +125,7 @@ rec {
     clock.bg = purple;
   };
 
-  # foot (sotormd/nixos)
+  # foot
   foot = {
     bg = bg0;
     fg = fg0;
@@ -126,7 +151,7 @@ rec {
     bright7 = fg2;
   };
 
-  # rofi (sotormd/nixos)
+  # rofi
   rofi = {
     border = blue2;
     handle = blue2;
@@ -163,14 +188,14 @@ rec {
     };
   };
 
-  # dunst (sotormd/dunst)
+  # dunst
   dunst = {
     bg = bg0;
     normal = blue2;
     urgent = yellow;
   };
 
-  # eww (sotormd/eww)
+  # eww
   eww = {
     inherit
       bg0
@@ -209,14 +234,14 @@ rec {
     };
   };
 
-  # swaylock (sotormd/nixos)
+  # swaylock
   swaylock = {
     clear = yellow;
     verifying = blue2;
     wrong = red;
   };
 
-  # sway (sotormd/nixos)
+  # sway
   sway = {
     focused = {
       border = blue2;
@@ -253,7 +278,7 @@ rec {
     background = bg0;
   };
 
-  # zathura (sotormd/nixos)
+  # zathura
   zathura = {
     notification = {
       error = {
@@ -320,6 +345,6 @@ rec {
     highlight = "rgba(129, 161, 193, 0.5)";
   };
 
-  # btop (sotormd/nixos)
+  # btop
   btop = "nord";
 }
