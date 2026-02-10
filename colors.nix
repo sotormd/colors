@@ -48,6 +48,19 @@ rec {
     color15 = fg2;
   };
 
+  # inkscape
+  inkscape = {
+    pagecolor = bg0;
+    deskcolor = bg0;
+    bordercolor = bg3;
+  };
+
+  # xkcd
+  xkcd = {
+    bgs = [ bg0 ];
+    fgs = [ fg0 ];
+  };
+
   # nvf
   neovim = {
     name = "nord";
