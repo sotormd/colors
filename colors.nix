@@ -33,6 +33,7 @@ rec {
     color1 = red;
     color2 = green;
     color3 = yellow;
+<<<<<<< Updated upstream
     color4 = blue3;
     color5 = purple;
     color6 = blue1;
@@ -45,6 +46,20 @@ rec {
     color12 = blue2;
     color13 = purple;
     color14 = blue0;
+=======
+    color4 = blue;
+    color5 = purple;
+    color6 = aqua;
+    color7 = fg1;
+
+    color8 = bg2;
+    color9 = red_b;
+    color10 = green_b;
+    color11 = yellow_b;
+    color12 = blue_b;
+    color13 = purple_b;
+    color14 = aqua_b;
+>>>>>>> Stashed changes
     color15 = fg2;
   };
 
@@ -359,5 +374,9 @@ rec {
   };
 
   # btop
+<<<<<<< Updated upstream
   btop = "nord";
+=======
+  btop = "gruvbox_dark";
+>>>>>>> Stashed changes
 }
