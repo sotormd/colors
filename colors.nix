@@ -357,7 +357,4 @@ rec {
 
     highlight = "rgba(129, 161, 193, 0.5)";
   };
-
-  # btop
-  btop = "nord";
 }
