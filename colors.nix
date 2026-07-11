@@ -120,16 +120,6 @@ rec {
       text = blue2;
       hover = bg3;
     };
-    animation = {
-      a = blue0;
-      b = blue1;
-      c = blue2;
-      d = blue3;
-      e = blue0;
-      f = blue1;
-      g = blue2;
-      h = blue3;
-    };
     modules.text = bg1;
     util.bg = red;
     network.bg = orange;
@@ -206,45 +196,6 @@ rec {
     bg = bg0;
     normal = blue2;
     urgent = yellow;
-  };
-
-  # eww
-  eww = {
-    inherit
-      bg0
-      bg1
-      bg2
-      bg3
-      ;
-    dock = {
-      active = blue2;
-      unfocused = bg3;
-    };
-    start = {
-      uptime = purple;
-      host = blue2;
-      leave = red;
-      system = {
-        text = blue2;
-        cpu = orange;
-        ram = yellow;
-        zfs = green;
-      };
-      fortune = blue2;
-      music = {
-        title = blue0;
-        artist = blue2;
-        skip = yellow;
-        play = green;
-        slider = purple;
-        lyrics = blue0;
-      };
-    };
-    calendar = {
-      accent = purple;
-      focused = bg1;
-      unfocused = fg0;
-    };
   };
 
   # swaylock
