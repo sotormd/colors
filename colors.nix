@@ -58,7 +58,18 @@ rec {
   # xkcd
   xkcd = {
     bgs = [ bg0 ];
-    fgs = [ fg0 ];
+    fgs = [
+      fg0
+      blue0
+      blue1
+      blue2
+      blue3
+      red
+      orange
+      yellow
+      green
+      purple
+    ];
   };
 
   # nvf
