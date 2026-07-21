@@ -57,8 +57,8 @@ rec {
 
   # xkcd
   xkcd = {
-    bgs = bg0;
-    fgs = fg0;
+    bg = bg0;
+    fg = fg0;
   };
 
   # nvf
